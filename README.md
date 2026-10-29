@@ -2,6 +2,12 @@
 
 Browser-local Thai educational anaerobic digestion simulator. Static ES modules, no build dependencies, login, backend, or hardware connection.
 
+## Live demo
+
+Open https://AshEngine24.github.io/BIOBUSTIX/ to try the simulator in your browser.
+
+GitHub Actions tests and publishes `dist/` to GitHub Pages on every push to `main`. Simulation data is stored separately in each visitor's browser.
+
 ## Run
 
 ```sh
