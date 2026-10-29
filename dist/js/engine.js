@@ -4,8 +4,8 @@ export const SCENARIOS=['Stable baseline','Organic loading increase','Feed inter
 export function createReactor(id){
  const r={id,t:0,remainder:0,running:false,speed:360,seed:101+Number(id.slice(-1)),scenario:0,
  controls:{pump:true,valve:true,feed:2,cod:20,heater:true,target:35,mixer:true,mix:70},
- state:{feedVolume:50,volume:20,substrate:.99,vfa:.6,alk:2.5,activity:.9,temp:35,gas:0,methane:0,feedTotal:0,alkTotal:0,pendingAlk:0,effluent:0,salt:0,alkTank:2},noise:Array(7).fill(0),history:[],events:[],forecasts:[]};
- record(r);log(r,'สร้าง session จำลอง · working volume 20 L');return r;
+ state:{feedVolume:50,volume:10,substrate:.99,vfa:.6,alk:2.5,activity:.9,temp:35,gas:0,methane:0,feedTotal:0,alkTotal:0,pendingAlk:0,effluent:0,salt:0,alkTank:2},noise:Array(7).fill(0),history:[],events:[],forecasts:[]};
+ record(r);log(r,'สร้าง session จำลอง · working volume 10 L');return r;
 }
 export function log(r,message){r.events.unshift({t:r.t,message});r.events=r.events.slice(0,500);}
 export function rates(r){
